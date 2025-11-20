@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import coupon.management.entity.Coupon;
 import coupon.management.repository.CouponsRepository;
-import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 
 @Service
