@@ -31,28 +31,7 @@ This project provides:
 
 ## 📂 Project Structure  
 
-
-src/main/java/coupon/management
-│
-├── controllers
-│ └── CouponController.java
-│
-├── entity
-│ ├── Coupon.java
-│ └── enums
-│ ├── DiscountType.java
-│ └── UserTiers.java
-│
-├── repository
-│ └── CouponsRepository.java
-│
-├── services
-│ └── CouponService.java
-│
-└── CouponManagementApplication.java
-
-
-
+![Uploading image.png…]()
 
 ---
 
@@ -99,3 +78,4 @@ Example request:
   "startDate": "2025-01-01",
   "endDate": "2025-12-31"
 }
+
