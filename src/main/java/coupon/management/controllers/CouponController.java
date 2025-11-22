@@ -49,5 +49,10 @@ public class CouponController {
         }
         return ResponseEntity.status(HttpStatus.OK).body(saved);
     }
+
+    @GetMapping("/getBestCoupon")
+    public ResponseEntity<?> getBestCoupon() {
+        return null;
+    }
     
 }

@@ -14,6 +14,11 @@ public class CouponService {
 
     private final CouponsRepository couponsRepository;
 
+    private Coupon getBest(List<Coupon> allCoupons) {
+        
+        return null;
+    }
+
     public Coupon saveCoupon(Coupon coupon) {
         return couponsRepository.save(coupon);
     }
@@ -48,10 +53,14 @@ public class CouponService {
                 .applicableCategories(updated.getApplicableCategories())
                 .excludedCategories(updated.getExcludedCategories())
                 .minItemsCount(updated.getMinItemsCount())
-
                 .build();
 
         return couponsRepository.save(updatedCoupon);
+    }
+
+    public Coupon getBestCoupon() {
+        List<Coupon> allCoupons = couponsRepository.findAll();
+        return getBest(allCoupons);
     }
 
 }
